@@ -14,7 +14,7 @@ El acceso a los datos se hace mediante peticiones a una API REST que también se
   - Descripción: Devuelve un superhéroe de acuerdo el id enviado
 
 Formato de la respuesta del API REST:
-'''
+```
 {
   "data": [
     {
@@ -40,7 +40,7 @@ Formato de la respuesta del API REST:
     }
   ]
 }
-'''
+```
 
 Vistas a implementar:
 - Vista de todos los superhéroes. El paginado se valorará si la API REST devuelve muchos.
