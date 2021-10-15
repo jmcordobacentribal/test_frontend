@@ -1,0 +1,43 @@
+.card-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    height: auto;
+    border: 1px solid #d1d1d1;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+}
+
+.card-hero > .card-avatar > img {
+    border-radius: 100%;
+    border: 3px solid #d1d1d1;
+}
+
+.card-hero > .card-name {
+    margin-bottom: 5px;
+}
+
+.card-hero > .card-name > h2 {
+    margin: 5px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2984e3;
+}
+
+.card-hero > .card-name > span {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #939393;
+}
+
+.card-hero > .card-flying {
+    margin: 5px 0;
+}
+
+.card-hero > .card-flying > span {
+    font-size: 0.8em;
+    font-weight: 500;
+}

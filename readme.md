@@ -5,12 +5,12 @@ En Centribal necesitamos implementar una página web donde se muestre el listado
 El acceso a los datos se hace mediante peticiones a una API REST que también se debe construir y debe tener el siguiente formato:
 - Petición 1:
   - Method: GET
-  - URL: http://<ip>:<port>/api/v1/test/superheroes
+  - URL: http://localhost:5000>/api/v1/test/superheroes
   - Descripción: Devuelve una lista de superhéroes de acuerdo al parámetro opcional query string: puedeVolar que puede ser true o false
 
 - Petición 2:
   - Method: GET
-  - URL: http://<ip>:<port>/api/v1/test/superheroes/<id>
+  - URL: http://localhost:5000>/api/v1/test/superheroes/<id>
   - Descripción: Devuelve un superhéroe de acuerdo el id enviado
 
 Formato de la respuesta del API REST:
