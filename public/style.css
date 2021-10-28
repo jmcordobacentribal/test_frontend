@@ -22,8 +22,11 @@ body {
 
 .button {
   background: #d63d2f !important;
-  width: 295px;
+  width: 300px;
   color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold !important;
 }
 
@@ -46,8 +49,15 @@ body {
   height: 50px;
 }
 
-.modal {
-  padding: 50px !important;
+.cont-modal {
+  padding: 40px !important;
+}
+
+@media (max-width: 820px) {
+  .cont-modal {
+    width: 65% !important;
+    height: 540px;
+  }
 }
 
 .Text {
@@ -109,4 +119,27 @@ body {
     box-shadow: 0 -2em #ffffff;
     height: 5em;
   }
+}
+
+/* Footer */
+
+.cont-footer {
+  background: #3548d4;
+  height: 10vh;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-footer {
+  color: white;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
 }

@@ -28,11 +28,17 @@ const Modals = ({ heroes }) => {
       </Button>
       <Modal
         open={open}
-        onClose={handleClose}
+        // onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="modal"
       >
-        <Box sx={style} className="modal">
+        <Box sx={style} className="cont-modal">
+          <span onClick={handleClose} className="close">
+            <i className="material-icons" id="car">
+              close_fullscreen
+            </i>
+          </span>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {heroes.name}
           </Typography>
