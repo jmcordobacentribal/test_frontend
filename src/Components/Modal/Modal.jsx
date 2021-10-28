@@ -32,11 +32,15 @@ const Modals = ({ heroes }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={style} className="modal">
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {heroes.name}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography
+            id="modal-modal-description"
+            sx={{ mt: 2 }}
+            className="Text"
+          >
             {heroes.descripcion}
           </Typography>
         </Box>
