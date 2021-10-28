@@ -7,11 +7,13 @@ const Home = () => {
   const [category, setcategory] = useState("");
 
   return (
-    <div>
-      <Navbar setBuscar={setBuscar} setcategory={setcategory} />
-      <Hero buscar={buscar} category={category} />
-      <Footer />
-    </div>
+    <>
+      <div>
+        <Navbar setBuscar={setBuscar} setcategory={setcategory} />
+        <Hero buscar={buscar} category={category} />
+        <Footer />
+      </div>
+    </>
   );
 };
 
