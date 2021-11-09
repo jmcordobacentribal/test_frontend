@@ -52,7 +52,7 @@ Si la lista de superhéroes no posee elementos o alguna de las peticiones falla,
 
 Necesitamos que la aplicación se construya con REACT. Se valorará que se haya tenido en cuenta el desarrollo con Arquitectura Hexagonal y DDD. También se valorará que el desarrollo contenga tests unitarios y que el proyecto se pueda levantar con Docker. Dejamos a tu elección la estética de la web para que puedas exponer toda tu creatividad.
 
-El entregable debe ser una Pull Request a la rama main del proyecto, de tal manera que nuestro equipo de desarrollo valore tu trabajo y en la posterior entrevista podamos conversar acerca de cómo y por qué has tomado determinadas decisiones. El entregable debe contener las instrucciones de instalación así como las instrucciones para acceder a los servicios API REST y carga de la propia web.
+El candidato debe crear una nueva rama de main y realizar Pull Request, de tal manera que nuestro equipo de desarrollo valore su trabajo y en la posterior entrevista podamos conversar acerca de cómo y por qué has tomado determinadas decisiones. El entregable debe contener las instrucciones de instalación así como las instrucciones para acceder a los servicios API REST y carga de la propia web.
 
 Muchas gracias por tu tiempo.
 
