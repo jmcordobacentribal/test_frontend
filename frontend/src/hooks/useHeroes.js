@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
-/* This hook fetches all superheroes from the API
-    then returns 3 variables. an array of heroes, loading state and error   */
+/* 
+    This hook fetches all superheroes from the API
+    then returns 3 variables. an array of heroes, loading state and error   
+*/
 export const useHeroes = () => {
     const [heroes, setHeroes] = useState([])
     const [isLoading, setIsLoading] = useState(true)
