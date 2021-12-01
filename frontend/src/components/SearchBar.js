@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SearchBar = ({superheroName, setSuperheroName}) => {
+const SearchBar = ({ superheroName, setSuperheroName}) => {
 	return (
 		<input
 			placeholder="search superhero"

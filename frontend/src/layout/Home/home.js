@@ -6,16 +6,34 @@ import { useSearchHero } from '../../hooks/useSearchHero'
 
 
 const Home = () => {
-
-	const [heroes, isLoading, error] = useHeroes([])
+	const [canFly, setCanFly] = useState(false)
+	const [heroes, isLoading, error] = useHeroes(canFly)
 	const [query, setQuery] = useState('')
-	const [filteredHeroes] = useSearchHero(heroes, query)
+	const [filteredHeroes] = useSearchHero(heroes, query, canFly)
 
 	return (
 		<div>
 			<h1>list of superheroes!</h1>
-			<SearchBar superheroName={query} setSuperheroName={setQuery}/>
-			<HeroesList heroes={query === '' ? heroes : filteredHeroes} isLoading={isLoading} error={error}/>
+			<SearchBar 
+				superheroName={query} 
+				setSuperheroName={setQuery} />
+			<label>
+				<span>Filter by Female ? </span>
+				<input
+				type="checkbox"
+				checked={canFly}
+				onChange={e => setCanFly(!canFly)}/>
+			</label>
+			
+			{isLoading ? (
+				<div>Loading...</div>
+			) : (
+				error !== null ? (
+					<h2> {error}</h2>
+				) : (
+					<HeroesList heroes={query === '' ? heroes : filteredHeroes}/>
+				)
+			)}
 		</div>
 	)
 }
