@@ -7,9 +7,15 @@ import { useSearchHero } from '../../hooks/useSearchHero'
 
 const Home = () => {
 	const [canFly, setCanFly] = useState(false)
-	const [heroes, isLoading, error] = useHeroes(canFly)
+	const [heroes, isLoading, error] = useHeroes()
 	const [query, setQuery] = useState('')
-	const [filteredHeroes] = useSearchHero(heroes, query, canFly)
+	const [filteredHeroes] = useSearchHero(heroes, query)
+
+	const canFlyHeroes = (heroesList) => {
+		return heroesList.filter(hero => (
+			hero.appearance.gender === 'Female'
+		))  
+	}
 
 	return (
 		<div>
@@ -31,7 +37,11 @@ const Home = () => {
 				error !== null ? (
 					<h2> {error}</h2>
 				) : (
-					<HeroesList heroes={query === '' ? heroes : filteredHeroes}/>
+					canFly ? (
+						<HeroesList heroes={query === '' ? canFlyHeroes(heroes) : canFlyHeroes(filteredHeroes)}/>
+					) : (
+						<HeroesList heroes={query === '' ? heroes : filteredHeroes}/>
+					)
 				)
 			)}
 		</div>
