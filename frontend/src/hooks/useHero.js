@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 
 /*
     This hook fetches the details of a superhero, using their id.
@@ -17,7 +17,6 @@ export const useHero = (id) => {
                 const data = await res.json()
 
                 setHero(data)
-                console.log(data)
                 setIsLoading(false)
             } catch(error) {
                 setIsLoading(false)

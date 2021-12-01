@@ -10,7 +10,7 @@ const Hero = ({id, image, name}) => {
 
     return(
         <div>
-            <img src={image} />
+            <img src={image} alt={name} />
             <h1> {name} </h1>
             <button onClick={() => handleHeroDetails(id)} >Details</button>            
         </div>

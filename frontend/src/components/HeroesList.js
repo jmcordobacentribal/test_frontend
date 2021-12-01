@@ -1,10 +1,8 @@
 import React from 'react'
-import { useHeroes } from '../hooks/useHeroes'
 import Hero from './Hero'
 
 
-const HeroesList = () => {
-	const [heroes, isLoading, error] = useHeroes([])
+const HeroesList = ({heroes, isLoading, error}) => {
 	return (
 		<div>
 			{isLoading ? (

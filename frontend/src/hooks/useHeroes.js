@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 
 /* 
     This hook fetches all superheroes from the API
@@ -16,7 +16,6 @@ export const useHeroes = () => {
                 const data = await res.json()
 
                 setHeroes(data)
-                console.log(data)
                 setIsLoading(false)
             } catch(error) {
                 setIsLoading(false)

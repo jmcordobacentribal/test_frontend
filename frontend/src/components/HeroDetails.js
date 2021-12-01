@@ -18,7 +18,7 @@ const HeroDetails = () => {
 					) : (
 						<div>
 							<h1> {hero.name}</h1 >
-							<img src={hero.images.sm} />
+							<img src={hero.images.sm} alt={hero.name} />
 							<ul>
 								<li> Gender: {hero.appearance.gender} </li>
 								<li> Race: {hero.appearance.race} </li>
