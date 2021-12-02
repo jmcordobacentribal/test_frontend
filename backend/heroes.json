@@ -1,0 +1,33 @@
+{
+    "data": [
+      {
+        "id": 3,
+        "nombre": "Wonder Woman",
+        "puedeVolar": true,
+        "nombreReal": "Diana Prince",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/33094.jpg?v=1627402390"
+      },
+      {
+        "id": 4,
+        "nombre": "Iron Man",
+        "puedeVolar": false,
+        "nombreReal": "Tony Stark",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/25249.jpg?v=1620917632"
+      },
+      {
+        "id": 5,
+        "nombre": "Superman",
+        "puedeVolar": true,
+        "nombreReal": "Clark Kent",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/13081.jpg?v=1625762663"
+      },
+      {
+        "id": 6,
+        "nombre": "Black Panther",
+        "puedeVolar": false,
+        "nombreReal": "T'Challa",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/17457.jpg?v=1584839491"
+      }
+    ]
+  }
+  
