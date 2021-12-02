@@ -14,10 +14,11 @@ export const useHeroes = () => {
     useEffect(() => {
         const fetchHeroes = async () => {
             try {
-                const res = await fetch('https://akabab.github.io/superhero-api/api/all.json')
+                //const res = await fetch('https://akabab.github.io/superhero-api/api/all.json')
+                const res = await fetch('http://localhost:8080/api/v1/test/superheroes')
                 const data = await res.json()
 
-                setHeroes(data)
+                setHeroes(data.data)
                 setIsLoading(false)
             } catch(error) {
                 setIsLoading(false)

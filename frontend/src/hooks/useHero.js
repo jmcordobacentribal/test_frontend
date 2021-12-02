@@ -13,7 +13,7 @@ export const useHero = (id) => {
     useEffect(() => {
         const fetchHero = async (id) => {
             try {
-                const res = await fetch(`https://akabab.github.io/superhero-api/api/id/${id}.json`)
+                const res = await fetch(`http://localhost:8080/api/v1/test/superheroes/${id}`)
                 const data = await res.json()
 
                 setHero(data)

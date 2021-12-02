@@ -16,7 +16,7 @@ export const useSearchHero = (heroesList, query) => {
 			} 
 			else {
 				const filtered = heroesList.filter(hero => (
-					hero.name.toLowerCase().includes(query.toLowerCase())
+					hero.nombre.toLowerCase().includes(query.toLowerCase())
 				))
 				setFilteredHeroes(filtered)
 			}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router'
 
-const Hero = ({id, image, name}) => {
+const Hero = ({hero}) => {
     const navigate = useNavigate()
     
     const handleHeroDetails = (id) => {
@@ -10,9 +10,9 @@ const Hero = ({id, image, name}) => {
 
     return(
         <div>
-            <img src={image} alt={name} />
-            <h1> {name} </h1>
-            <button onClick={() => handleHeroDetails(id)} >Details</button>            
+            <img src={hero.avatarURL} alt={hero.nombre} />
+            <h1> {hero.nombre} </h1>
+            <button onClick={() => handleHeroDetails(hero.id)} >Details</button>            
         </div>
     )
 }

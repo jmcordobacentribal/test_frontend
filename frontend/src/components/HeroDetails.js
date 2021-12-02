@@ -17,12 +17,11 @@ const HeroDetails = () => {
 						<h2>{error}</h2>
 					) : (
 						<div>
-							<h1> {hero.name}</h1 >
-							<img src={hero.images.sm} alt={hero.name} />
+							<h1> {hero.nombre}</h1 >
+							<img src={hero.avatarURL} alt={hero.nombre} />
 							<ul>
-								<li> Gender: {hero.appearance.gender} </li>
-								<li> Race: {hero.appearance.race} </li>
-								<li> Eye color: {hero.appearance.eyeColor} </li>
+								<li> Puede volar: {hero.puedeVolar ? 'Si' : 'No'} </li>
+								<li> Nombre real: {hero.nombreReal} </li>
 							</ul>
 						</div>
 					)
