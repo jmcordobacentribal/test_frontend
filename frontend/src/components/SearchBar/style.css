@@ -1,0 +1,12 @@
+.header-input {
+  border: 1px solid black ;
+  height: 20px;
+  width: 300px;
+  background-color: #23272e;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}

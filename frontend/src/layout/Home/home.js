@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import Checkbox from '../../components/Checkbox'
-import HeroesList from '../../components/HeroesList'
-import SearchBar from '../../components/SearchBar'
+import HeroesList from '../../components/HeroesList/HeroesList'
+import SearchBar from '../../components/SearchBar/SearchBar'
 import { useHeroes } from '../../hooks/useHeroes'
 import { useSearchHero } from '../../hooks/useSearchHero'
+
+import './style.css'
 
 
 const Home = () => {
@@ -13,21 +15,23 @@ const Home = () => {
 	const [filteredHeroes] = useSearchHero(heroes, query)
 
 	const canFlyHeroes = (heroesList) => {
-		return heroesList.filter(hero => hero.puedeVolar) 
+		return heroesList.filter(hero => hero.puedeVolar)
 	}
 
 	return (
 		<div>
 			<h1>list of superheroes!</h1>
-			<SearchBar
-				superheroName={query}
-				setSuperheroName={setQuery} />
-			<Checkbox
-				filterBy={'Can Fly'}
-				isChecked={canFly}
-				handleChange={setCanFly} />
+			<div className="header">
+				<SearchBar
+					superheroName={query}
+					setSuperheroName={setQuery} />
+				<Checkbox
+					filterBy={'Can Fly'}
+					isChecked={canFly}
+					handleChange={setCanFly} />
+			</div>
 
-			{isLoading ? ( 
+			{isLoading ? (
 				<div>Loading...</div>
 			) : (
 				error !== null ? (
