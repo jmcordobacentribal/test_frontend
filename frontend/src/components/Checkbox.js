@@ -1,12 +1,13 @@
 import React from "react"
 
-const Checkbox = ({filterBy, isChecked, handleChange}) => {
+const Checkbox = ({isChecked, handleChange}) => {
   return(
     <label>
-				<span>Filter by {filterBy} ? </span>
+				<span>Superheroes with ability to fly</span>
 				<input
 				type="checkbox"
 				checked={isChecked}
+				data-testid="filterCheckbox"
 				onChange={e => handleChange(!isChecked)}/>
 			</label>
   )

@@ -26,7 +26,6 @@ const Home = () => {
 					superheroName={query}
 					setSuperheroName={setQuery} />
 				<Checkbox
-					filterBy={'Can Fly'}
 					isChecked={canFly}
 					handleChange={setCanFly} />
 			</div>

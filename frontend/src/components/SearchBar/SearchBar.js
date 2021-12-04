@@ -7,6 +7,7 @@ const SearchBar = ({ superheroName, setSuperheroName}) => {
 			className='header-input'
 			placeholder="search superhero"
 			value={superheroName}
+			data-testid="searchbar"
 			onChange={e => setSuperheroName(e.target.value)} />
 	)
 }
