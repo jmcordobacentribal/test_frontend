@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors');
 const app = express()
-const port = 8080
+const port = process.env.PORT || 8080
 
 const heroes = require('./heroes.json')
 
@@ -28,5 +28,5 @@ app.get('/api/v1/test/superheroes/:id', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`listening at  http://localhost:${port}`)
+    console.log(`listening on port: ${port}`)
 })
