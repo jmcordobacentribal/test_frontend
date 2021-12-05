@@ -33,11 +33,13 @@ const Home = () => {
 			{isLoading ? (
 				<div>Loading...</div>
 			) : (
-				error !== null ? (
-					<h2> {error}</h2>
+				error !== null ? (  
+					<h2>Error while getting data...</h2>
 				) : (
 					canFly ? (
+						<div>
 						<HeroesList heroes={query === '' ? canFlyHeroes(heroes) : canFlyHeroes(filteredHeroes)} />
+						</div>
 					) : (
 						<HeroesList heroes={query === '' ? heroes : filteredHeroes} />
 					)
