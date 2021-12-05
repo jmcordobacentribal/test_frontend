@@ -13,8 +13,7 @@ const Hero = ({hero}) => {
     return(
         <div className="container-hero">
             <h3> {hero.nombre} </h3>
-            <img onClick={() => handleHeroDetails(hero.id)} src={hero.avatarURL} alt={hero.nombre} />
-            {/* <button onClick={() => handleHeroDetails(hero.id)} >Details</button>     */}        
+            <img onClick={() => handleHeroDetails(hero.id)} src={hero.avatarURL} alt={hero.nombre} />  
         </div>
     )
 }
