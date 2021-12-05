@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import { API_URL } from '../services/ApiConfig'
 
 /*
     This hook fetches the details of a superhero, using their id.
@@ -13,7 +14,7 @@ export const useHero = (id) => {
     useEffect(() => {
         const fetchHero = async (id) => {
             try {
-                const res = await fetch(`http://localhost:8080/api/v1/test/superheroes/${id}`)
+                const res = await fetch(`${API_URL}/api/v1/test/superheroes/${id}`)
                 const data = await res.json()
 
                 setHero(data)

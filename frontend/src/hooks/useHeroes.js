@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import { API_URL } from '../services/ApiConfig'
 
 /**
  * This hook fetches all superheroes from the API
@@ -14,7 +15,7 @@ export const useHeroes = () => {
     useEffect(() => {
         const fetchHeroes = async () => {
             try {
-                const res = await fetch('http://localhost:8080/api/v1/test/superheroes')
+                const res = await fetch(`${API_URL}/api/v1/test/superheroes`)
                 const data = await res.json()
 
                 setHeroes(data.data)
