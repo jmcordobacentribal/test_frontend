@@ -1,0 +1,15 @@
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.container-hero img {
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.container-hero img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

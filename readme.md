@@ -1,66 +1,46 @@
-# Enunciado de la prueba técnica
+# Superheroes Technical Test for Centribal
 
-En Centribal necesitamos implementar una página web donde se muestre el listado de todos los superhéroes que están en nómina.
+# Documentation
 
-El acceso a los datos se hace mediante peticiones a una API REST que también se debe construir y debe tener el siguiente formato:
-- Petición 1:
-  - Method: GET
-  - URL: http://<ip>:<port>/api/v1/test/superheroes
-  - Descripción: Devuelve una lista de superhéroes de acuerdo al parámetro opcional query string: puedeVolar que puede ser true o false
+* Links to use the app
+* Setup using Docker Compose
+* Setup without using Docker
+* Testing
 
-- Petición 2:
-  - Method: GET
-  - URL: http://<ip>:<port>/api/v1/test/superheroes/<id>
-  - Descripción: Devuelve un superhéroe de acuerdo el id enviado
+## Frontend and Backend links
 
-Formato de la respuesta del API REST:
-```
-{
-  "data": [
-    {
-      "id": 3,
-      "nombre": "Wonder Woman",
-      "puedeVolar": true,
-      "nombreReal": "Diana Prince",
-      "avatarURL": "https://<ip>:<port>/image1.png"
-    },
-    {
-      "id": 4,
-      "nombre": "Iron Man",
-      "puedeVolar": true,
-      "nombreReal": "Tony Stark",
-      "avatarURL": "https://<ip>:<port>/image2.png"
-    },
-    {
-      "id": 5,
-      "nombre": "Superman",
-      "puedeVolar": true,
-      "nombreReal": "Clark Kent",
-      "avatarURL": "https://<ip>:<port>/image3.png"
-    }
-  ]
-}
-```
+In your browser go to ```https://superheroes-centribal.netlify.app/``` to use the App.
 
-Vistas a implementar:
-- Vista de todos los superhéroes. El paginado se valorará si la API REST devuelve muchos.
-- Vista de la información de un solo superhéroe.
-- Vista que muestra todos los superhéroes que pueden volar.
-- Se debe implementar un buscador por el atributo “nombre” que filtre desde el mismo frontend los elementos ya obtenidos.
+To check the API go to ```https://superheroes-api-centribal.herokuapp.com/```
 
-Si la lista de superhéroes no posee elementos o alguna de las peticiones falla, debe mostrar un mensaje de error en la vista (No utilizar alert).
+```/api/v1/test/superheroes``` return all heroes.
 
-Necesitamos que la aplicación se construya con REACT. Se valorará que se haya tenido en cuenta el desarrollo con Arquitectura Hexagonal y DDD. También se valorará que el desarrollo contenga tests unitarios y que el proyecto se pueda levantar con Docker. Dejamos a tu elección la estética de la web para que puedas exponer toda tu creatividad.
+```/api/v1/test/superheroes/:id``` returns a hero by using their id. 
+## Setup using Docker Compose
 
-El candidato debe crear una nueva rama de main y realizar Pull Request, de tal manera que nuestro equipo de desarrollo valore su trabajo y en la posterior entrevista podamos conversar acerca de cómo y por qué has tomado determinadas decisiones. El entregable debe contener las instrucciones de instalación así como las instrucciones para acceder a los servicios API REST y carga de la propia web.
+1. Close this repository
+2. Open a terminal windows in your project directory
+3. Run ```docker-compose build```
+4. Run ```docker-compose up```
+5. Open your browser and go to ```localhost:3000```
 
-Muchas gracias por tu tiempo.
+You should be all set to test the app locally! 
+
+## Setup without using Docker
+
+1. Clone this repository
+2. Open a terminal window in your project directory and change directory to ```/backend```
+3. Run ```npm install```
+4. Then, run ```npm start```
+5. Open another terminal window in your project directory and change directory to ```/frontend```
+6. Run ```npm install```
+7. then, run ```npm start```
+8. Open your browser and go to ```localhost:3000```
 
 
+## Testing
 
-
-
-
-
+1. Open a terminal window in your project directory and change directory to ```/frontend```
+2. Run ```npm test```
 
 
