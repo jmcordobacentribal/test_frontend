@@ -2,9 +2,20 @@
 
 # Documentation
 
+* Links to use the app
 * Setup using Docker Compose
 * Setup without using Docker
 * Testing
+
+## Frontend and Backend links
+
+In your browser go to ```https://superheroes-centribal.netlify.app/``` to use the App.
+
+To check the API go to ```https://superheroes-api-centribal.herokuapp.com/```
+
+```/api/v1/test/superheroes``` return all heroes.
+
+```/api/v1/test/superheroes/:id``` returns a hero by using their id. 
 ## Setup using Docker Compose
 
 1. Close this repository
