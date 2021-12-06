@@ -22,7 +22,7 @@ const HeroesList = ({ heroes }) => {
 	}
 
 	return (
-		<div>
+		<main>
 			<div className="container" >
 				{heroes.length === 0 ? (
 					<h2>There are no heroes to show</h2>
@@ -33,11 +33,12 @@ const HeroesList = ({ heroes }) => {
 					)
 				}
 			</div>
-			{currentPage === 1 ? (<div></div>) : (<button onClick={handleBack}> Back </button>)}
-			{currentPage + 1 !== lastPage ? (<button onClick={handleNext}> Next </button>) : (<div></div>)}
+			<div className="container-pagination">
+			{currentPage === 1 ? (<div></div>) : (<button className="button-pagination" onClick={handleBack}> Back </button>)}
+			{currentPage + 1 !== lastPage ? (<button className="button-pagination" onClick={handleNext}> Next </button>) : (<div></div>)}
+			</div>
 
-
-		</div>
+		</main>
 	)
 
 }

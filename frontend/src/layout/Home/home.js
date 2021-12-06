@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Checkbox from '../../components/Checkbox'
+import Checkbox from '../../components/Checkbox/Checkbox'
 import HeroesList from '../../components/HeroesList/HeroesList'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import { useHeroes } from '../../hooks/useHeroes'

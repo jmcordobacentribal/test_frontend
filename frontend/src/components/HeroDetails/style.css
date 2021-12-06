@@ -6,6 +6,10 @@
   flex-wrap: wrap;
 }
 
+.container--hero-details img {
+  border-radius: 5px;
+}
+
 .hero-details{
   display: flex;
   flex-direction: column;

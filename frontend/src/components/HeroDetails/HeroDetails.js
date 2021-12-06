@@ -24,7 +24,7 @@ const HeroDetails = () => {
 								<img src={hero.avatarURL} alt={hero.nombre} />
 								<div className="hero-details">
 									<p> Real name: {hero.nombreReal} </p>
-									<p> Can fly: {hero.puedeVolar ? 'Si' : 'No'} </p>
+									<p> Can fly: {hero.puedeVolar ? 'Yes' : 'No'} </p>
 								</div>
 							</div>
 						</>
