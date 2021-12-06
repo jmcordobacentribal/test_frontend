@@ -1,0 +1,23 @@
+.container-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container-label--input {
+  cursor: pointer;
+}
+
+.container-label--input:checked {
+  background-color: black;
+}
+
+.container-label--span {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+
+

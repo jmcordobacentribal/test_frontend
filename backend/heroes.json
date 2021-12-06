@@ -1,0 +1,138 @@
+{
+    "data": [
+      {
+        "id": 3,
+        "nombre": "Wonder Woman",
+        "puedeVolar": true,
+        "nombreReal": "Diana Prince",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/33094.jpg?v=1627402390"
+      },
+      {
+        "id": 4,
+        "nombre": "Iron Man",
+        "puedeVolar": false,
+        "nombreReal": "Tony Stark",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/25249.jpg?v=1620917632"
+      },
+      {
+        "id": 5,
+        "nombre": "Superman",
+        "puedeVolar": true,
+        "nombreReal": "Clark Kent",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/13081.jpg?v=1625762663"
+      },
+      {
+        "id": 6,
+        "nombre": "Black Panther",
+        "puedeVolar": false,
+        "nombreReal": "T'Challa",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/17457.jpg?v=1584839491"
+      },
+      {
+        "id": 7,
+        "nombre": "Spider-man",
+        "puedeVolar": false,
+        "nombreReal": "Peter Parker",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/133.jpg?v=1615905402"
+      },
+      {
+        "id": 8,
+        "nombre": "Batman",
+        "puedeVolar": false,
+        "nombreReal": "Bruce Wayne",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/639.jpg?v=1636140577"
+      },
+      {
+        "id": 9,
+        "nombre": "Scarlet Witch",
+        "puedeVolar": false,
+        "nombreReal": "Wanda Maximoff",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/444.jpg?v=1595433035"
+      },
+      {
+        "id": 10,
+        "nombre": "Thor",
+        "puedeVolar": false,
+        "nombreReal": "Thor Odinson",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/140.jpg?v=1631125359"
+      },
+      {
+        "id": 11,
+        "nombre": "Lucifer Morningstar",
+        "puedeVolar": false,
+        "nombreReal": "Samael",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/10807.jpg?v=1635726203"
+      },
+      {
+        "id": 12,
+        "nombre": "Captain Marvel",
+        "puedeVolar": true,
+        "nombreReal": "Mar-Vell",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/10301.jpg?v=1620822679"
+      },
+      {
+        "id": 13,
+        "nombre": "Hulk",
+        "puedeVolar": false,
+        "nombreReal": "Bruce Banner",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/83.jpg?v=1602236687"
+      },
+      {
+        "id": 14,
+        "nombre": "Captain America",
+        "puedeVolar": false,
+        "nombreReal": "Steve Rogers",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/274.jpg?v=1617687418"
+      },
+      {
+        "id": 15,
+        "nombre": "Wolverine",
+        "puedeVolar": false,
+        "nombreReal": "Logan",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/161.jpg?v=1605791352"
+      },
+      {
+        "id": 16,
+        "nombre": "Ant-man",
+        "puedeVolar": true,
+        "nombreReal": "Hank Pym",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/11/050/13875.jpg?v=1554728794"
+      },
+      {
+        "id": 17,
+        "nombre": "A-Bomb",
+        "puedeVolar": false,
+        "nombreReal": "Richard Milhouse Jones",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/10060.jpg?v=1582334305"
+      },
+      {
+        "id": 18,
+        "nombre": "Vision",
+        "puedeVolar": true,
+        "nombreReal": "Vision",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/532.jpg?v=1630782185"
+      },
+      {
+        "id": 19,
+        "nombre": "Black Widow",
+        "puedeVolar": false,
+        "nombreReal": "Natasha Romanoff",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/248.jpg?v=1595053219"
+      },
+      {
+        "id": 20,
+        "nombre": "Doctor Strange",
+        "puedeVolar": true,
+        "nombreReal": "Stephen Strange",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/55.jpg?v=1607072096"
+      },
+      {
+        "id": 21,
+        "nombre": "Hawkeye",
+        "puedeVolar": false,
+        "nombreReal": "Clint Barton",
+        "avatarURL": "https://www.superherodb.com/pictures2/portraits/10/050/73.jpg?v=1597500181"
+      }
+    ]
+  }
+  
