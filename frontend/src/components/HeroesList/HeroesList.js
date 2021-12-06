@@ -7,7 +7,7 @@ const HeroesList = ({ heroes }) => {
 
 	const [currentPage, setCurrentPage] = useState(1)
 
-	const heroesPerPage = 5
+	const heroesPerPage = 8
 	const lastHeroIndex = currentPage * heroesPerPage;
 	const firstHeroIndex = lastHeroIndex - heroesPerPage;
 	const currentHeroes = heroes.slice(firstHeroIndex, lastHeroIndex)

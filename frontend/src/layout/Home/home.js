@@ -20,7 +20,7 @@ const Home = () => {
 
 	return (
 		<div>
-			<h1>list of superheroes!</h1>
+			<h1>List of superheroes!</h1>
 			<div className="header">
 				<SearchBar
 					superheroName={query}

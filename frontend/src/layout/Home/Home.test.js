@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import Home from './home'
-import Checkbox from '../../components/Checkbox'
+import Checkbox from '../../components/Checkbox/Checkbox'
 import SearchBar from '../../components/SearchBar/SearchBar'
 
 
@@ -8,7 +8,7 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 describe('Home Component', () => {
   test('renders list of superheroes title', () => {
     render(<Home />)
-    const linkElement = screen.getByText(/list of superheroes!/i)
+    const linkElement = screen.getByText(/List of superheroes!/i)
     expect(linkElement).toBeInTheDocument()
   })
 
