@@ -9,10 +9,9 @@ estados inicial de redux + la store inicializada  */
 const initialState = 
 {
     hero : [],
-    heroesList:[],
-    back: false, 
-
-    
+    heroList:[],
+    currentHeroes:[],
+    canFly:false,    
 }
 
 const composeEnhacers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose

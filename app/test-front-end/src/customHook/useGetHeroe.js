@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from "axios"
-import { setList } from '../actions';
+import { setList,setListHeroes } from '../actions';
 import { useDispatch } from 'react-redux';
 const useGetHeroe = () => {
 const dispatch = useDispatch()
@@ -14,7 +14,7 @@ axios.get('http://localhost:3333/data', {
   .then((response) => {
     setTimeout(() => {
       
-     response.data.map((data,i)=>{ dispatch(setList(data))})
+     response.data.map((data,i)=>{ dispatch(setList(data),dispatch(setListHeroes(data)))})
 
        
     }, 3000);

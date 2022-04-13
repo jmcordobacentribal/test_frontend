@@ -71,4 +71,10 @@ section {
   background-color: #3E3B60;
   border-color: #3E3B60;
 }
+.categoria
+{
+  @include flexCenCen;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+}
 
