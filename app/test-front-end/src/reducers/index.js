@@ -6,33 +6,27 @@ const reducer = (state, action) => {
         hero: [...state.hero, action.payload],
       };
 
-      case 'SET_LIST_HERO': 
-      return {
-          ...state,
-          heroList:[...state.heroList, action.payload],
-      };
-      case 'SET_CURRENT_HEROES': 
-      return {
-          ...state,
-          currentHeroes:[...state.currentHeroes, action.payload],
-      };
-      case 'SET_CAN_FLY': 
+    case "SET_LIST_HERO":
       return {
         ...state,
-        back: action.payload
-    };
+        heroList: [...state.heroList, action.payload],
+      };
+    case "SET_CURRENT_HEROES":
+      return {
+        ...state,
+        currentHeroes: [...state.currentHeroes, action.payload],
+      };
+
     case "FILTER":
       return {
         ...state,
         hero: state.hero.filter((items) => false),
       };
-      case 'DELETE_HERO':
-        return {
-            ...state,
-            hero: state.hero.filter(
-                (index) => false ,
-            ),
-        };
+    case "DELETE_HERO":
+      return {
+        ...state,
+        hero: state.hero.filter((index) => false),
+      };
 
     default:
       return state;

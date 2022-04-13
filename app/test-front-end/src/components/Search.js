@@ -26,12 +26,10 @@ const Search = () => {
 
     result.map((d) => {
       dispatch(setList(d));
-  
     });
   };
 
   return (
-
     <div className="search">
       <div className="box">
         <div className="container-1">

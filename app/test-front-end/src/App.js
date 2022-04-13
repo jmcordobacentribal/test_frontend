@@ -10,10 +10,12 @@ const App = () => {
   return (
     <div>
       <h1 className="title">Superheroes</h1>
-      < p className="categoria">
-        <Button onClick={()=>setCanFly(true)}>Ver solo los que vuelan</Button>
+      <p className="categoria">
+        <Button onClick={() => setCanFly(true)}>Ver solo los que vuelan</Button>
         <br></br>
-        <Button onClick={()=>setCanFly(false)}>Ver todos los superheroes</Button>
+        <Button onClick={() => setCanFly(false)}>
+          Ver todos los superheroes
+        </Button>
       </p>
 
       {canFly === false ? (

@@ -3,11 +3,6 @@ import { Modal, Card } from "react-bootstrap";
 import "../assets/sass/components/ModalView.scss";
 
 const ModalCard = ({ show, setShow, data }) => {
-  /* Modal para agregar persona  */
-  // console.log(data)
-
-  /* metodos para rescatar valores por id  */
-
   /* cierra modal */
   const handleClose = () => {
     setShow(false);

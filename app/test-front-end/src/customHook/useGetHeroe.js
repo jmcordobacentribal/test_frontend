@@ -23,6 +23,25 @@ axios.get('http://localhost:3333/data', {
     console.log(error);
   });
 }
+async function getHero(id)
+{
+axios.get(`http://localhost:3333/data/${id}`, {
+    headers: {
+      'content-type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
+    }})
+  .then((response) => {
+    setTimeout(() => {
+      
+     response.data.map((data,i)=>{ dispatch(setList(data),dispatch(setListHeroes(data)))})
+
+       
+    }, 3000);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+}
   return {getHeroes}
 }
 
