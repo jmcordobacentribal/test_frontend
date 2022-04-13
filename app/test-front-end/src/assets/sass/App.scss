@@ -1,0 +1,74 @@
+@import "~bootstrap/scss/bootstrap";
+@import './Var.scss';
+
+@mixin colCenCen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexBetCen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexCenCen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexStaSta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #FEC8B5;
+  color: #ffffff;
+  font-family: $text-font;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+  font-family: $title-font;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  min-height: calc(100vh - 300px);
+}
+.title
+{
+  text-align: center;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #3E3B60;
+  border-color: #3E3B60;
+}
+
